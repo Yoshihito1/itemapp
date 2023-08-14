@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <title>HTML Generator</title>
+</head>
+<body>
+	<h1>Laptop PC</h1>
+	
+	<div class="form">
+        
+		<form>
+            <h2>spec</h2>
+			<ul>
+				<li>
+					<label for="title">商品名 <br> Item name <br></label>
+				<textarea id="title" name="title"></textarea><br><br>
+				</li>
+				<li>
+					メーカー <br>maker <br>
+					<select name="maker" id="maker">
+						<option value="">-</option>
+                        <option value="Lenovo">Lenovo</option>
+                        <option value="HP">HP</option>
+                        <option value="DELL">DELL</option>
+                        <option value="acer">acer</option>
+                        <option value="NEC">NEC</option>
+                        <option value="FUJITSU">FUJITSU</option>
+                        <option value="TOSHIBA">TOSHIBA</option>
+                        <option value="Panasonic">Panasonic</option>
+                        <option value="Microsoft">Microsoft</option>
+                        <option value="Apple">Apple</option>
+                        <option value="mouse">mouse</option>
+                        <option value="SONY">SONY</option>
+                        <option value="ドスパラ GALLERIA">ドスパラ GALLERIA</option>
+                        <option value="TSUKUMO">TSUKUMO</option>
+                        <option value="自作PC">自作PC</option>
+                        
+					</select>
+				</li>
+                <li>
+					メモリ<br>memory <br>
+					<select name="memory" id="memory">
+						<option value="">-</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                        <option value="20">20</option>
+                        <option value="32">32</option>
+                        <option value="64">64</option>
+                        <option value="128">128</option>
+					</select>
+                    <label for="memory1">    <br></label>
+				<textarea class="tx" id="memory1" name="memory1"></textarea><br><br>
+				</li>
+                <li>
+					タイプ<br>type <br>
+					<select name="type" id="type">
+						<option value="オフィスレベルの生産性で、ビジネスを成功に導きます。">仕事</option>
+                        <option value="高性能スペックでゲームやクリエイティブな生活をサポートします。">ゲーム</option>
+                        <option value="高負荷の演算処理やグラフィックス処理を伴うワークロードも難なく実行 できます。">ワークステーション</option>
+                        <option value="高負荷の演算処理やグラフィックス処理を伴うワークロードも難なく実行できクリエイターの創造力を駆り立てます。">クリエイター</option>
+					</select>
+                    <label for="type1">    <br></label>
+				<textarea class="tx" id="type1" name="type1"></textarea><br><br>
+				</li>
+                <li>
+					SSD<br><br>
+					<select name="ssd" id="ssd">
+						<option value="">-</option>
+                        <option value="128GB(SSD)">128GB</option>                    
+						<option value="128GB(新品SSD)">128GB(新品SSD)</option>
+						<option value="256GB(SSD)">256GB</option>                    
+						<option value="256GB(新品SSD)">256GB(新品SSD)</option>
+                        <option value="500GB(SSD)">500GB</option>                    
+						<option value="500GB(新品SSD)">500GB(新品SSD)</option>
+                        <option value="512GB(SSD)">512GB</option>                    
+						<option value="512GB(新品SSD)">512GB(新品SSD)</option>
+                        <option value="1TB(SSD)">1TB</option>                    
+						<option value="1TB(新品SSD)">1TB(新品SSD)</option>
+                        <option value="2TB(SSD)">2TB</option>                    
+						<option value="2TB(新品SSD)">2TB(新品SSD)</option>
+					</select>
+                    
+				</li>
+                <li>
+					SSD箱 <br> SSD Package<br>
+					<select name="ssdbox" id="ssdbox">
+						<option value="">-</option>
+						<option value="">No</option>                    
+						<option value="◆新品SSDの箱付きで、万が一SSDの調子が悪くなってもSSDの保証が『3年』付きます。*お問合せはSSDメーカーにお願い致します。">Yes</option>
+					</select>
+				</li>
+                <li>
+					HDD<br><br>
+					<select name="hdd" id="hdd">
+						<option value="">-</option>
+                        <option value=" + 300GB(HDD)">300GB</option>                    
+						<option value=" + 450GB(HDD)">450GB</option>
+						<option value=" + 500GB(HDD)">500GB</option>                    
+						<option value=" + 600GB(HDD)">600GB</option>
+                        <option value=" + 640GB(HDD)">640GB</option>                    
+						<option value=" + 700GB(HDD)">700GB</option>
+                        <option value=" + 750GB(HDD)">750GB</option>                    
+						<option value=" + 900GB(HDD)">900GB</option>
+                        <option value=" + 1TB(HDD)">1TB</option>                    
+						<option value=" + 2TB(HDD)">2TB</option>
+                        <option value=" + 3TB(HDD)">3TB</option>                    
+						<option value=" + 4TB(HDD)">4TB</option>
+					</select>
+				</li>
+				<li>
+					CPUメーカー <br> CPU Maker<br>
+					<select name="cpu" id="cpu">
+						<option value="">-</option>
+						<option value="Intel">Intel</option>                    
+						<option value="AMD">AMD</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Microsoft">Microsoft</option>
+					</select>
+				</li>
+                <li>
+					CPU世代 <br>CPU gen <br>
+					<select name="cpugen" id="cpugen">
+						<option value="">-</option>
+						<option value="(第６世代CPU)">第６世代</option>                    
+						<option value="(第７世代CPU)">第７世代</option>
+                        <option value="(第８世代CPU)">第８世代</option>                    
+						<option value="(第９世代CPU)">第９世代</option>
+                        <option value="(第１０世代CPU)">第１０世代</option>                    
+						<option value="(第１１世代CPU)">第１１世代</option>
+                        <option value="(第１２世代CPU)">第１２世代</option>                    
+						<option value="(第１３世代CPU)">第１３世代</option>
+                        <option value="(第１４世代CPU)">第１４世代</option>	
+					</select>
+				</li>
+				<li>
+					<label for="cpuname">CPU名<br>CPU name<br></label>
+				<textarea id="cpuname" name="cpuname" placeholder="Example⇨ Core i7-8550U"></textarea><br><br>
+                </li>
+                <li>
+					コア数<br>   <br>
+					<select name="com" id="com">
+						<option value="">-</option>
+                        <option value="<!-- ">4コア以下↓↓</option>
+                        <option value="">4コア以上↑↑</option>
+					</select>
+                    <label for="thread1">    <br></label>
+				<textarea class="tx" id="thread1" name="thread1"></textarea><br><br>
+				</li>
+                <li>
+					スレッド数<br>   <br>
+					<select name="ment" id="ment">
+						<option value="">-</option>
+                        <option value="--> ">8コア以下↓↓</option>
+                        <option value="">8コア以上↑↑</option>
+					</select>
+                    <label for="thread1">    <br></label>
+				<textarea class="tx" id="thread1" name="thread1"></textarea><br><br>
+				</li>
+				<li>
+					コア数<br>Core <br>
+					<select name="core" id="core">
+						<option value="">-</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="16">16</option>
+                        <option value="24">24</option>
+                        <option value="36">36</option>
+					</select>
+                    <label for="core1">    <br></label>
+				<textarea class="tx" id="core1" name="core1"></textarea><br><br>
+				</li>
+				<li>
+					スレッド数<br>  thread <br>
+					<select name="thread" id="thread">
+						<option value="">-</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                        <option value="16">16</option>
+                        <option value="24">24</option>
+                        <option value="32">32</option>
+                        <option value="48">48</option>
+                        <option value="64">64</option>
+                        <option value="72">72</option>
+					</select>
+                    <label for="thread1">    <br></label>
+				<textarea class="tx" id="thread1" name="thread1"></textarea><br><br>
+				</li>
+                <li>
+					CPU周波数（GHz）<br>CPU frequency(GHz)<br>
+					<select name="ghz" id="ghz">
+						<option value="">-</option>
+						<option value="1.1">1.1</option>
+                        <option value="1.2">1.2</option>
+                        <option value="1.3">1.3</option>
+                        <option value="1.4">1.4</option>
+						<option value="1.5">1.5</option>
+                        <option value="1.6">1.6</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2.0">2.0</option>
+						<option value="2.1">2.1</option>
+                        <option value="2.2">2.2</option>
+                        <option value="2.3">2.3</option>
+                        <option value="2.4">2.4</option>
+						<option value="2.5">2.5</option>
+                        <option value="2.6">2.6</option>
+                        <option value="2.7">2.7</option>
+                        <option value="2.8">2.8</option>
+                        <option value="2.9">2.9</option>
+                        <option value="3.0">3.0</option>
+                        <option value="3.1">3.1</option>
+                        <option value="3.2">3.2</option>
+                        <option value="3.3">3.3</option>
+                        <option value="3.4">3.4</option>
+                        <option value="3.5">3.5</option>
+					</select>
+                    <label for="ghz1">    <br></label>
+				<textarea class="tx" id="ghz1" name="ghz1"></textarea><br><br>
+				</li>
+                <li>
+					グラフィック（ CPU内蔵 ） <br> graphics（ CPU on board ）<br>
+					<select name="graphics" id="graphics">
+						<option value="">-</option>
+						<option value="Intel HD graphics<br>">Intel HD</option>
+                        <option value="Intel HD 400 graphics<br>">Intel HD 400</option>
+                        <option value="Intel HD 405 graphics<br>">Intel HD 405</option>
+                        <option value="Intel HD 500 graphics<br>">IIntel HD 500</option>                    
+						<option value="Intel HD 510 graphics<br>">Intel HD 510</option>
+                        <option value="Intel HD 520 graphics<br>">Intel HD 520</option>
+                        <option value="Intel HD 530 graphics<br>">Intel HD 530</option>                   
+                        <option value="Intel HD 615 graphics<br>">IIntel HD 615</option>
+                        <option value="Intel HD 620 graphics<br>">IIntel HD 620</option>
+                        <option value="Intel HD 630 graphics<br>">Intel HD 630</option>
+                        <option value="Intel UHD graphics<br>">Intel UHD</option>
+                        <option value="Intel UHD 610 graphics<br>">Intel UHD 610</option>
+                        <option value="Intel UHD 615 graphics<br>">Intel UHD 615</option>
+                        <option value="Intel UHD 620 graphics<br>">Intel UHD 620</option>
+                        <option value="Intel UHD 630 graphics<br>">Intel UHD 630</option>
+                        <option value="Intel UHD 730 graphics<br>">Intel UHD 730</option>
+                        <option value="Intel UHD 750 graphics<br>">Intel UHD 750</option>
+                        <option value="Intel UHD 770 graphics<br>">Intel UHD 770</option>
+                        <option value="Intel 11世代UHD graphics<br>">Intel 11世代UHD</option>
+                        <option value="Intel Iris Xe graphics<br>">Intel Iris Xe</option>
+                        <option value="Intel Iris Plus graphics">Intel Iris Plus</option>
+                        <option value="Intel iris plus 540 graphics<br>">Intel iris plus 540</option>
+                        <option value="Intel iris plus 550 graphics<br>">Intel iris plus 550</option>
+                        <option value="Intel iris 640 graphics<br>">Intel iris 640</option>
+                        <option value="Intel iris 650 graphics<br>">Intel iris 650</option>
+                        <option value="Microsoft ディスプレイ基本アダプター<br>">基本アダプター</option>
+                        <option value="Radeon R5 graphics<br>">Radeon R5</option>
+                        <option value="AMD Radeon R9 M390 2GB<br>">AMD Radeon R9 M390 2GB</option>
+                        <option value="Radeon Vega 11 graphics">Radeon Vega 11</option>
+                        <option value="Radeon Vega 8 Mobile graphics<br>">Radeon Vega 8 Mobile</option>
+                        <option value="Radeon Vega 8 graphics<br>">Radeon Vega 8</option>
+                        <option value="Radeon Vega 3 graphics<br>">Radeon Vega 3</option>
+                        <option value="Radeon Vega 10 Mobile graphics<br>">Radeon Vega 10 Mobile</option>
+                        <option value="Radeon Vega 6 graphics<br>">Radeon Vega 6</option>
+					</select>
+				</li>
+                <li>
+					ビデオカード<br>video card<br>
+					<select name="graphic1" id="graphic1">
+						<option value="">-</option>
+                        <option value="NVIDIA Quadro P600搭載！！<br>">P600</option>
+                        <option value="NVIDIA Quadro P620搭載！！<br>">P620</option>                    
+						<option value="NVIDIA Quadro P1000搭載！！<br>">P1000</option>
+                        <option value="NVIDIA GeForce GTX 1060搭載！！<br>">GTX1060</option>
+                        <option value="NVIDIA GeForce GTX 1650搭載！！<br>">GTX1650</option>
+                        <option value="NVIDIA GeForce GTX 1650 SUPER搭載！！<br>">GTX1650SUPER</option>
+						<option value="NVIDIA Quadro RTX 4000搭載！！<br>">RTX4000</option>                    
+						<option value="NVIDIA Quadro RTX 4200搭載！！<br>">RTX4200</option>
+                        <option value="Radeon RX 560X搭載！！<br>">RX 560X</option>
+					</select>
+                    <label for="graphic2">    <br></label>
+				<textarea  id="graphic2" name="graphic2"></textarea><br><br>
+				</li>
+                <li>
+					画面サイズ <br> Monitor Size<br>
+					<select name="display" id="display">
+						<option value="-">-</option>
+                        <option value="12.1型">12.1</option>
+                        <option value="12.5型">12.5</option>
+                        <option value="13.3型">13.3</option>
+                        <option value="14型">14</option>
+                        <option value="15.6型">15.6</option>
+                        <option value="17.3型">17.3</option>
+                        <option value="21.5型">21.5</option>
+                        <option value="23.8型">23.8</option>
+                        <option value="24型">24</option>
+                        <option value="27型">27</option>
+					</select>
+                    <label for="display1">    <br></label>
+				<textarea class="tx" id="display1" name="display1"></textarea><br><br>
+				</li>
+                <li>
+					画面解像度 <br> display dpi<br>
+					<select name="dpi" id="dpi">
+						<option value="">-</option>
+                        <option value="1366 × 768(HD)">1366  × 768</option>
+                        <option value="1920 × 1080(FHD)">1920 × 1080</option>
+                        <option value="1920 × 1200(FHD)">1920 × 1200</option>
+                        <option value="2048 × 1080(2K)">2048 × 1080</option>
+                        <option value="2048 × 1152(2K)">2048 × 1152</option>
+                        <option value="2048 × 1536(2K)">2048 × 1536</option>
+                        <option value="2304 × 1728(2K)">2304 × 1728</option>
+                        <option value="2560 × 1440(2K)">2560 × 1440</option>
+                        <option value="2560 × 1600(2K)">2560 × 1600</option>
+                        <option value="2560 × 2048(2K)">2560 × 2048</option>
+                        <option value="2880 × 1620(3K)">2880 × 1620</option>
+                        <option value="2880 × 1800(3K)">2880 × 1800</option>
+                        <option value="3200 × 1800(3K)">3200 × 1800</option>
+                        <option value="3200 × 2400(3K)">3200 × 2400</option>
+                        <option value="3840 × 2160(4K)">3840 × 2160</option>
+                        <option value="3840 × 2400(4K)">3840 × 2400</option>
+                        <option value="5120 × 2880(5K)">5120 × 2880</option>
+                        <option value="7680 × 4320(8K)">7680 × 4320</option>
+                        <option value="8192 × 4320(8K)">8192 × 4320</option>
+					</select>
+                    <label for="dpi1">    <br></label>
+				<textarea class="tx2" id="dpi1" name="dpi1"></textarea><br><br>
+				</li>
+                <li>
+					オフィスソフト <br> Office Soft<br>
+					<select name="office" id="office">
+						<option value="-">-</option>
+						<option value="Microsoft Office 2021インストール済み　(サービス品)<br><br><font color=&quot; #43644B &quot;	>★★★★★キャンペーン中！！ <br> 今この機種をご購入された方限定で オフィスソフトをWPS Office からMicrosoft Officeに無料変更致します!! <br>
+                        ◆Microsoft Office Professional Plus 2021のアプリケーション内容 : Word , Excel , PowerPoint , OneNote , Outlook , Access , Publisher 。</font>">Microsoft Office 2021</option>                    
+						<option value="Microsoft Office 2019インストール済み　(サービス品)<br><br><font color=&quot; #43644B &quot;	>★★★★★キャンペーン中！！ <br> 今この機種をご購入された方限定で オフィスソフトをWPS Office からMicrosoft Officeに無料変更致します!! <br>
+                            ◆Microsoft Office Professional Plus 2019のアプリケーション内容 : Word , Excel , PowerPoint , OneNote , Outlook , Access , Publisher 。</font>">Microsoft Office 2019</option>
+                        <option value="KING SOFT Office 2019付き。 ( 最新WPS Office 2 Standard Edition ) <br>
+                            <font color=&quot; #43644B &quot;	>※ライセンス認証済みでございますので、届いたらすぐにOfficeをお使えいただけます。 <br>
+                        ※WPS OfficeシリーズはMicrosoft Officeとの高い互換性、 操作性に加え圧倒的なコストパフォーマンスが支持され、全世界10億人以上のユーザーに使用されています。　<br> ●文書作成(Writer)●表計算(Spreadsheets)●スライド作成(Presentation)●PDF閲覧(PDF) Word,Excel,Powerpoint マイクロソフトオフィスとの高互換ソフト）
+                            </font>">WPS Office</option>                  
+
+					</select>
+				</li>
+                
+                <li>
+					OS<br><br>
+					<select name="os" id="os">
+						<option value="">-</option>
+                        <option value="Windows 11 Pro">Windows 11 Pro</option>                    
+						<option value="Windows 11 Home">Windows 11 Home</option>
+						<option value="Windows 10 Pro">Windows 10 Pro</option>                    
+						<option value="Windows 10 Home">Windows 10 Home</option>
+                        <option value="mac os Monterey">mac os Monterey</option>
+                        <option value="mac os Big Sur">mac os Big Sur</option>
+                        <option value="mac os Catalina">mac os Catalina</option>
+                        <option value="mac os Mojave">mac os Mojave</option>
+                        <option value="mac os ">mac os High Sierra</option>
+                        <option value="Google chrome OS ">chrome OS</option>
+					</select>
+                    <label for="os1">    <br></label>
+				<textarea  id="os1" name="os1"></textarea><br><br>
+				</li>
+                <li>
+					通信規格<br>Net Work<br>
+					<select name="connect" id="connect">
+						<option value="-">-</option>
+                        <option value="Wi-Fi・Bluetooth">Wi-Fi</option>                    
+						<option value="Wi-Fi・Bluetooth・有線LAN">Wi-Fi+LAN</option>
+                        <option value="有線LAN">有線LAN</option>
+						<option value="Wi-Fi・Bluetooth・sim">Wi-Fi+sim</option>                    
+						<option value="Wi-Fi・Bluetooth・有線LAN・sim">Wi-Fi+LAN+sim</option>
+					</select>
+                    <label for="connect1">    <br></label>
+				<textarea  id="connect1" name="connect1"></textarea><br><br>
+				</li>
+                <li>
+					Webカメラ内蔵・マイク装備<br>Web Camera<br>
+					<select name="cam" id="cam">
+                        <option value="-">-</option>
+                        <option value="Webカメラも搭載しており、ビデオ通話や語学レッスンやWEB会議ツールZoomやSkypeにも活用できます。">Yes</option>
+                        <option value="-">No</option>
+					</select>
+				</li>
+                <li>
+					メモリスロット<br>Memory Slot<br>
+					<select name="slot" id="slot">
+						<option value="-">-</option>
+                        <option value="SDカードスロット">SD</option>
+                        <option value="microSDカードスロット">microSD</option>
+					</select>
+				</li>
+                <li>
+					外部ディスプレイ出力<br>display output<br>
+					<select name="output" id="output">
+						<option value="">-</option>
+                        <option value="HDMI×1">HDMI×1</option>
+                        <option value="HDMI×1 <br>D-SUB×1">HDMI+D-SUB</option>
+                        <option value="HDMI×1<br>DisplayPort×1">HDMI+DP</option>
+                        <option value="HDMI×1<br>USB-C×1">HDMI+USB-C</option>
+                        <option value="DisplayPort ×1">DP×1</option>
+                        <option value="DisplayPort ×2">DP×2</option>
+                        <option value="DisplayPort ×3">DP×3</option>
+                        <option value="DisplayPort ×4">DP×4</option>
+                        <option value="miniDisplayPort ×2">miniDP×2</option>
+                        <option value="USB-C ×2">USB-C×2</option>
+                        <option value="なし">-</option>
+					</select>
+                    <label for="output1">    <br></label>
+				<textarea  id="output1" name="output1"></textarea><br><br>
+				</li>
+                <li>
+					USB<br>USB<br>
+					<select name="USB" id="USB">
+						<option value="-">-</option>
+                        <option value="USB-A">USB-A</option>
+                        <option value="USB-A<br>USB-C">USB-A+C</option>
+                        <option value="USB-C">USB-C</option>
+					</select>
+				</li>
+                <li>
+					光学ドライブ<br>disk drive<br>
+					<select name="drive" id="drive">
+						<option value="-">-</option>
+                        <option value="DVD-RW (DVDを作成することが出来ます。)">DVD-RW</option>
+                        <option value="DVD-Rom (DVDを観覧することが出来ます。)">DVD-Rom</option>
+                        <option value="BD-RE (ブルーレイを繰り返し作成できます。)">BD-RE</option>
+                        <option value="BD-R (ブルーレイを作成できます。)">BD-R</option>
+					</select>
+				</li>
+                <li>
+					バッテリー<br>battery<br>
+					<select name="battery" id="battery">
+						<option value="-">-</option>
+                        <option value="バッテリー起動可能です。<br><font color=&quot; #43644B &quot;>*バッテリーは消耗品の為サポート対象外です。</font>">OK</option>
+                        <option value="バッテリー起動可能です。*新品に交換済みです。<br><font color=&quot; #43644B &quot;>*バッテリーは消耗品の為サポート対象外です。</font>">新品</option>
+                        <option value="バッテリー起動は出来ませんが、電源コードを差せば問題なく使用出来ます。">No</option>
+					</select>
+				</li>
+                <li>
+					バックライトキーボード<br>backlight keyboard<br>
+					<select name="backlight" id="backlight">
+						<option value="">-</option>
+                        <option value="<br>バックライトキーボード搭載で暗闇でもタイピングサクサクです！！">ある</option>
+                        <option value="">ない</option>
+					</select>
+				</li>
+                <li>
+					USキーボード<br>US keyboard<br>
+					<select name="usk" id="usk">
+						<option value="">-</option>
+                        <option value="<br>USキー配置でスタイリッシュな印象です。">ある</option>
+                        <option value="">ない</option>
+					</select>
+				</li>
+                <li>
+					<br> タッチパネル<br>touch panel<br>
+					<select name="touch" id="touch">
+						<option value="">-</option>
+                        <option value="<br>タッチパネル搭載で直感的に操作出来ます！！">ある</option>
+                        <option value="">ない</option>
+					</select>
+				</li>
+                <li>
+					<br>付属品<br> accessory<br>
+					<select name="accessory" id="accessory">
+						<option value="-">-</option>
+                        <option value="ACアダプター<br>バッテリー（本体装着）<br>
+                             Officeプロダクトキー（パソコン内にて認証済み） のみとなります。
+                            ">AC+office</option>                                       
+						<option value="電源コード<br> Officeプロダクトキー（パソコン内にて認証済み） のみとなります。
+                            ">コード+office</option>
+                        <option value="ACアダプター<br>バッテリー（本体装着）<br>タッチペン <br>
+                                Officeプロダクトキー（パソコン内にて認証済み） のみとなります。
+                               ">AC+office+Pen</option>    
+                        <option value="電源コード<br> 
+                                 Apple社製マウス＆キーボードのみとなります。
+                                ">コード+mk(mac)</option> 
+                        <option value="電源コード<br> 
+                                 他社製マウス＆キーボードのみとなります。
+                                ">コード+mk(他社)</option>
+                        <option value="電源コード<br> Officeプロダクトキー（パソコン内にて認証済み）<br>
+                                 他社製マウス＆キーボードのみとなります。
+                                ">コード+office+mk(他社)</option>
+                        <option value="電源コード<br> 
+                                 他社製マウス＆キーボードのみとなります。
+                                ">コード+mk(他社)</option>            
+					</select>
+                    <label for="accessory1">    <br></label>
+				<textarea  id="accessory1" name="accessory1"></textarea><br><br>
+				</li>
+                <li>
+                    <label for="size"><br>本体サイズ（突起部含まず）<br>size <br></label><br>
+                    <textarea id="size" name="size"></textarea><br><br>
+                </li>
+                <li>
+                    <label for="weight"><br>重量（バッテリ含む）<br>weight <br></label><br>
+                    <textarea id="weight" name="weight"></textarea><br><br>
+                </li>
+                <li class="condition">
+					液晶・状態<br>display condition<br>
+					<select name="dpcondition" id="dpcondition">
+						<option value="-">-</option>
+                        <option value="液晶発色良好、画面にキズがなく、綺麗な状態でございます。">きれい</option>
+                        <option value="液晶発色良好ですが、画面に擦り傷キズがございます。*画像参考<br>使用時には気になりませんでした。">きれい・擦り傷</option>
+                        <option value="画面に白飛びがございます。*画像参考">白飛び</option>
+                        <option value="画面にドット抜けがございます。*画像参考">ドット抜け</option>
+                        <option value="-">なし</option>
+					</select>
+                    <label for="dpcondition1">    <br></label>
+				<textarea class="cd" id="dpcondition1" name="dpcondition1"></textarea><br><br>
+				</li>
+                <li class="condition">
+					天板、底面・状態<br>appearance condition<br>
+					<select name="apcondition" id="apcondition">
+						<option value="">-</option>
+                        <option value="傷も少なく綺麗な状態です。（多少の擦り傷や汚れ等はございます。）">きれい</option>
+                        <option value="天板、側面、底面に擦り傷がございます。（多少の使用感を感じます。）">普通</option>
+                        <option value="天板、側面、底面に多少目立つ擦り傷がございます。（使用感を感じます。）*画像参考">傷 中</option>
+                        <option value="天板、側面、底面に目立つ擦り傷がございます。（使用感を感じます。）*画像参考">傷 大</option>
+                        <option value="-">なし</option>
+					</select>
+                    <label for="apcondition1">    <br></label>
+				<textarea class="cd" id="apcondition1" name="apcondition1"></textarea><br><br>
+				</li>
+                <li class="condition">
+					外観凹み・状態<br>dent condition<br>
+					<select name="dent" id="dent">
+						<option value="">-</option>
+                        <option value="<br>外観に多少の凹みがございます。*画像参考">少しあり</option>
+                        <option value="<br>外観に多少の凹みが数箇所ございます。*画像参考">少しあり数箇所</option>
+                        <option value="<br>外観に凹みがございます。*画像参考">あり</option>
+                        <option value="<br>外観に凹みが数箇所ございます。*画像参考">あり数箇所</option>
+					</select>
+                    <label for="dent1">    <br></label>
+				<textarea class="cd" id="dent1" name="dent1"></textarea><br><br>
+				</li>
+                <li class="condition">
+					キーボード・状態<br>keyboard condition<br>
+					<select name="keyboard" id="keyboard">
+						<option value="-">-</option>
+                        <option value="文字欠け等ございません。（多少のテカリはございます。）">きれい</option>
+                        <option value="文字欠け等ございませんが、使用感を感じます。（テカリがございます。）*画像参考">文字◎普通</option>
+                        <option value="文字欠け等ございませんが、かなり薄くなっています。（テカリがございます。）*画像参考">文字△普通</option>
+                        <option value="文字欠けがございます。（テカリ、使用感がございます。）*画像参考">文字×</option>
+                        <option value="文字欠けが数箇所ございます。（テカリ、使用感がございます。）*画像参考">文字×数箇所</option>
+					</select>
+                    <label for="keyboard1">    <br></label>
+				<textarea class="cd" id="keyboard1" name="keyboard1"></textarea><br><br>
+				</li>
+                <li class="condition">
+					パームレスト・状態<br>palm rest condition<br>
+					<select name="palm" id="palm">
+						<option value="-">-</option>
+                        <option value="綺麗な状態です。（多少の擦り傷等はございます。）">きれい</option>
+                        <option value="多少の擦り傷等ございます。（多少の使用感を感じます。）*画像参考">普通</option>
+                        <option value="多少目立つ擦り傷等ございます。（使用感を感じます。）*画像参考">擦り傷 中</option>
+                        <option value="目立つ擦り傷等ございます。（使用感を感じます。）*画像参考">擦り傷 大</option>
+                        <option value="凹みと擦り傷等ございます。（使用感を感じます。）*画像参考">擦り傷凹み</option>
+                        <option value="すれ等で変色しています。（使用感を感じます。）*画像参考">変色(擦り)</option>
+					</select>
+                    <label for="palm1">    <br></label>
+				<textarea class="cd" id="palm1" name="palm1"></textarea><br><br>
+				</li>
+                <li class="condition">
+					動作確認<br>operation check<br>
+					<select name="operation" id="operation">
+						<option value="-">-</option>
+                        <option value="動作絶好調です。自信を持ってお勧めできます。">自信</option>
+                        <option value="多少の使用感はございますが、動作絶好調です。お勧めできます。">多少の使用感</option>
+                        <option value="使用感はございますが、動作絶好調です。お勧めできます。">使用感</option>
+					</select>
+                    <label for="operation1">    <br></label>
+				<textarea class="cd" id="operation1" name="operation1"></textarea><br><br>
+				</li>
+		</ul>
+	</div>
+    
+    <div class="space"></div>
+	<div class="space"></div>
+    <div>
+        <ul>
+            <li class="btn">
+                <button class="button" type="button" onclick="generateHTML()">Generate HTML</button>
+            </li>
+            <li class="btn">
+                <button id="copybtn" class="button1" type="button" data-clipboard-target="#code">copytext</button>
+
+            </li>
+        </ul>
+    </div>
+
+        <div class="space"></div>
+
+    <div class="main2">
+		<div id="preview"></div>
+        <div id="code"></div>
+	</div>
+	</div>
+	<script src="app.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  generateHTML();
+});
+
+    </script>
+</body>
+</html>
